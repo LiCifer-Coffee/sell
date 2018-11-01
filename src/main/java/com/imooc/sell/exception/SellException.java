@@ -14,4 +14,9 @@ public class SellException extends RuntimeException {
     }
 
 
+    public SellException(Integer code, String defaultMessage) {
+
+        super(defaultMessage);
+        this.code = code;
+    }
 }
